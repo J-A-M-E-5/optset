@@ -81,7 +81,6 @@ class Options:
 
         self._options = Box(options, frozen_box=True)
         self._options_attr = Box(options_attr, frozen_box=True)
-        print(self._options_attr)
 
     def __getattr__(self, key):
         if key in self._options:
